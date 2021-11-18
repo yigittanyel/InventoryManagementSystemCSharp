@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64AEAC9A-D3A3-45B2-9C78-9BB8E403B8BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EnvanterProgramıDeneme</RootNamespace>
+    <AssemblyName>EnvanterProgramıDeneme</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AidiyetFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AidiyetFatura.Designer.cs">
+      <DependentUpon>AidiyetFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaEkran.Designer.cs">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarkodOkuyucu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarkodOkuyucu.Designer.cs">
+      <DependentUpon>BarkodOkuyucu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilgisayar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilgisayar.Designer.cs">
+      <DependentUpon>Bilgisayar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle.Designer.cs">
+      <DependentUpon>Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EklemeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EklemeEkrani.Designer.cs">
+      <DependentUpon>EklemeEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekran.Designer.cs">
+      <DependentUpon>Ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElTerminali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElTerminali.Designer.cs">
+      <DependentUpon>ElTerminali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuncelleEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuncelleEkrani.Designer.cs">
+      <DependentUpon>GuncelleEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klavye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klavye.Designer.cs">
+      <DependentUpon>Klavye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mouse.Designer.cs">
+      <DependentUpon>Mouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Office.Designer.cs">
+      <DependentUpon>Office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Projeksiyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projeksiyon.Designer.cs">
+      <DependentUpon>Projeksiyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VeriEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriEkrani.Designer.cs">
+      <DependentUpon>VeriEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yazıcı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yazıcı.Designer.cs">
+      <DependentUpon>Yazıcı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İsletimSistemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İsletimSistemi.Designer.cs">
+      <DependentUpon>İsletimSistemi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AidiyetFatura.resx">
+      <DependentUpon>AidiyetFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaEkran.resx">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarkodOkuyucu.resx">
+      <DependentUpon>BarkodOkuyucu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilgisayar.resx">
+      <DependentUpon>Bilgisayar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekle.resx">
+      <DependentUpon>Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EklemeEkrani.resx">
+      <DependentUpon>EklemeEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekran.resx">
+      <DependentUpon>Ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElTerminali.resx">
+      <DependentUpon>ElTerminali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuncelleEkrani.resx">
+      <DependentUpon>GuncelleEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klavye.resx">
+      <DependentUpon>Klavye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mouse.resx">
+      <DependentUpon>Mouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Office.resx">
+      <DependentUpon>Office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projeksiyon.resx">
+      <DependentUpon>Projeksiyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VeriEkrani.resx">
+      <DependentUpon>VeriEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yazıcı.resx">
+      <DependentUpon>Yazıcı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İsletimSistemi.resx">
+      <DependentUpon>İsletimSistemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
