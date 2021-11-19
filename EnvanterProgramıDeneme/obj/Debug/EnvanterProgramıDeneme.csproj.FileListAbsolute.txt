@@ -2,7 +2,6 @@ C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\bin\De
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\bin\Debug\EnvanterProgramıDeneme.exe
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\bin\Debug\EnvanterProgramıDeneme.pdb
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.csproj.AssemblyReference.cache
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.Form1.resources
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.Properties.Resources.resources
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.csproj.GenerateResource.cache
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.csproj.CoreCompileInputs.cache
@@ -94,17 +93,6 @@ C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\bin\De
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.AnaEkran.resources
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.Bilgisayar.resources
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.AidiyetFatura.resources
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.Ekran.resources
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.Yazıcı.resources
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.BarkodOkuyucu.resources
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.ElTerminali.resources
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.Klavye.resources
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.Mouse.resources
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.Projeksiyon.resources
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.Office.resources
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.İsletimSistemi.resources
-C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.VeriEkrani.resources
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.EklemeEkrani.resources
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.Ekle.resources
 C:\Users\msi\source\repos\EnvanterProgramıDeneme\EnvanterProgramıDeneme\obj\Debug\EnvanterProgramıDeneme.GuncelleEkrani.resources

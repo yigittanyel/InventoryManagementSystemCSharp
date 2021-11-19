@@ -47,35 +47,54 @@ namespace EnvanterProgramıDeneme
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.ara = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemSearchControl1 = new DevExpress.XtraEditors.Repository.RepositoryItemSearchControl();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -102,13 +121,22 @@ namespace EnvanterProgramıDeneme
             this.barButtonItem7,
             this.barButtonItem8,
             this.barButtonItem9,
-            this.barButtonItem10});
+            this.barButtonItem10,
+            this.barEditItem1,
+            this.barEditItem2,
+            this.barButtonItem11,
+            this.ara,
+            this.barButtonItem12});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 16;
+            this.ribbonControl1.MaxItemId = 22;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1136, 183);
+            this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemButtonEdit1,
+            this.repositoryItemTextEdit1,
+            this.repositoryItemSearchControl1});
+            this.ribbonControl1.Size = new System.Drawing.Size(1043, 183);
             // 
             // BtnAnasayfa
             // 
@@ -225,7 +253,7 @@ namespace EnvanterProgramıDeneme
             this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
             this.barButtonItem4.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.barButtonItem4.ItemAppearance.Hovered.Options.UseFont = true;
-            this.barButtonItem4.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.barButtonItem4.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.barButtonItem4.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem4.Name = "barButtonItem4";
             this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
@@ -287,6 +315,64 @@ namespace EnvanterProgramıDeneme
             this.barButtonItem10.Name = "barButtonItem10";
             this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick_1);
             // 
+            // barEditItem1
+            // 
+            this.barEditItem1.Caption = "barEditItem1";
+            this.barEditItem1.Edit = this.repositoryItemButtonEdit1;
+            this.barEditItem1.Id = 16;
+            this.barEditItem1.Name = "barEditItem1";
+            // 
+            // repositoryItemButtonEdit1
+            // 
+            this.repositoryItemButtonEdit1.AutoHeight = false;
+            this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
+            // 
+            // barEditItem2
+            // 
+            this.barEditItem2.Edit = this.repositoryItemTextEdit1;
+            this.barEditItem2.Id = 17;
+            this.barEditItem2.Name = "barEditItem2";
+            // 
+            // repositoryItemTextEdit1
+            // 
+            this.repositoryItemTextEdit1.AutoHeight = false;
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
+            // 
+            // barButtonItem11
+            // 
+            this.barButtonItem11.Caption = "ARA";
+            this.barButtonItem11.Id = 18;
+            this.barButtonItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
+            this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
+            this.barButtonItem11.Name = "barButtonItem11";
+            // 
+            // ara
+            // 
+            this.ara.Caption = "ARA";
+            this.ara.Edit = this.repositoryItemSearchControl1;
+            this.ara.Id = 20;
+            this.ara.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ara.ItemAppearance.Hovered.Options.UseFont = true;
+            this.ara.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ara.ItemAppearance.Normal.Options.UseFont = true;
+            this.ara.Name = "ara";
+            // 
+            // repositoryItemSearchControl1
+            // 
+            this.repositoryItemSearchControl1.AutoHeight = false;
+            this.repositoryItemSearchControl1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Repository.ClearButton(),
+            new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.repositoryItemSearchControl1.Name = "repositoryItemSearchControl1";
+            // 
+            // barButtonItem12
+            // 
+            this.barButtonItem12.Caption = "barButtonItem12";
+            this.barButtonItem12.Id = 21;
+            this.barButtonItem12.Name = "barButtonItem12";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -326,11 +412,16 @@ namespace EnvanterProgramıDeneme
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1136, 563);
+            this.dataGridView1.Size = new System.Drawing.Size(1043, 563);
             this.dataGridView1.TabIndex = 2;
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.simpleButton2);
             this.panel1.Controls.Add(this.simpleButton1);
             this.panel1.Controls.Add(this.textBox14);
@@ -341,7 +432,6 @@ namespace EnvanterProgramıDeneme
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.textBox13);
             this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.textBox11);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.dateTimePicker2);
             this.panel1.Controls.Add(this.dateTimePicker1);
@@ -356,220 +446,305 @@ namespace EnvanterProgramıDeneme
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 183);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1136, 563);
+            this.panel1.Size = new System.Drawing.Size(1043, 563);
             this.panel1.TabIndex = 4;
             this.panel1.Visible = false;
             // 
-            // label1
+            // textBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(24, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 25);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Cihaz ID:";
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox2.Location = new System.Drawing.Point(754, 215);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(246, 22);
+            this.textBox2.TabIndex = 10;
             // 
-            // textBox3
+            // label2
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(182, 53);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(129, 30);
-            this.textBox3.TabIndex = 5;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(628, 215);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 19);
+            this.label2.TabIndex = 48;
+            this.label2.Text = "Fatura No:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(175, 150);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(113, 24);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(218, 410);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 39);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "SEÇ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox1.Location = new System.Drawing.Point(175, 349);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(113, 22);
+            this.textBox1.TabIndex = 6;
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(646, 293);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(158, 53);
+            this.simpleButton2.TabIndex = 11;
+            this.simpleButton2.Text = "GÜNCELLE";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(829, 293);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(171, 53);
+            this.simpleButton1.TabIndex = 12;
+            this.simpleButton1.Text = "GERİ DÖN";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox14.Location = new System.Drawing.Point(175, 99);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(113, 22);
+            this.textBox14.TabIndex = 1;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label18.Location = new System.Drawing.Point(46, 99);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(63, 19);
+            this.label18.TabIndex = 41;
+            this.label18.Text = "Pc Adı:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(349, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(199, 261);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label17.Location = new System.Drawing.Point(10, 349);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(134, 19);
+            this.label17.TabIndex = 39;
+            this.label17.Text = "Fatura Fotoğraf:";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTimePicker3.Location = new System.Drawing.Point(754, 158);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(246, 22);
+            this.dateTimePicker3.TabIndex = 9;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label16.Location = new System.Drawing.Point(628, 158);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(114, 19);
+            this.label16.TabIndex = 37;
+            this.label16.Text = "Fatura Tarihi:";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox13.Location = new System.Drawing.Point(175, 193);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(113, 22);
+            this.textBox13.TabIndex = 3;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(19, 193);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(115, 19);
+            this.label15.TabIndex = 35;
+            this.label15.Text = "Alınan Firma:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(19, 148);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(131, 19);
+            this.label14.TabIndex = 33;
+            this.label14.Text = "Kiralık / Bizim :";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(754, 104);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(246, 22);
+            this.dateTimePicker2.TabIndex = 8;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(754, 54);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(246, 22);
+            this.dateTimePicker1.TabIndex = 7;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(628, 104);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(121, 19);
+            this.label13.TabIndex = 30;
+            this.label13.Text = "Garanti Bitişi:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(583, 54);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(157, 19);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Garanti Başlangıcı:";
             // 
             // textBox9
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox9.Location = new System.Drawing.Point(182, 288);
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox9.Location = new System.Drawing.Point(175, 288);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(129, 30);
-            this.textBox9.TabIndex = 25;
+            this.textBox9.Size = new System.Drawing.Size(113, 22);
+            this.textBox9.TabIndex = 5;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(35, 291);
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(46, 293);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 25);
+            this.label9.Size = new System.Drawing.Size(63, 19);
             this.label9.TabIndex = 24;
             this.label9.Text = "Model:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(35, 243);
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(46, 238);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(91, 25);
+            this.label10.Size = new System.Drawing.Size(71, 19);
             this.label10.TabIndex = 23;
             this.label10.Text = "Seri No:";
             // 
             // textBox10
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox10.Location = new System.Drawing.Point(182, 238);
+            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox10.Location = new System.Drawing.Point(175, 238);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(129, 30);
-            this.textBox10.TabIndex = 22;
+            this.textBox10.Size = new System.Drawing.Size(113, 22);
+            this.textBox10.TabIndex = 4;
             // 
-            // label11
+            // label1
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(634, 54);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(194, 25);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "Garanti Başlangıcı:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(46, 54);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 19);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Cihaz ID:";
             // 
-            // label13
+            // textBox3
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(686, 104);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(141, 25);
-            this.label13.TabIndex = 30;
-            this.label13.Text = "Garanti Bitişi:";
+            this.textBox3.Enabled = false;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox3.Location = new System.Drawing.Point(175, 56);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(113, 22);
+            this.textBox3.TabIndex = 0;
             // 
-            // dateTimePicker1
+            // txtSearch
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(844, 54);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(280, 30);
-            this.dateTimePicker1.TabIndex = 31;
+            this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSearch.Location = new System.Drawing.Point(547, 127);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(154, 22);
+            this.txtSearch.TabIndex = 9;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // dateTimePicker2
+            // label3
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(844, 108);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(280, 30);
-            this.dateTimePicker2.TabIndex = 32;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(446, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 22);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Arama:";
             // 
-            // label14
+            // label4
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(5, 153);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(156, 25);
-            this.label14.TabIndex = 33;
-            this.label14.Text = "Kiralık / Bizim :";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(446, 84);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 22);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Kategori:";
             // 
-            // textBox11
+            // comboBox2
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox11.Location = new System.Drawing.Point(182, 148);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(129, 30);
-            this.textBox11.TabIndex = 34;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(14, 196);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(140, 25);
-            this.label15.TabIndex = 35;
-            this.label15.Text = "Alınan Firma:";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox13.Location = new System.Drawing.Point(182, 193);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(129, 30);
-            this.textBox13.TabIndex = 36;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(686, 158);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(142, 25);
-            this.label16.TabIndex = 37;
-            this.label16.Text = "Fatura Tarihi:";
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker3.Location = new System.Drawing.Point(844, 153);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(280, 30);
-            this.dateTimePicker3.TabIndex = 38;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.Location = new System.Drawing.Point(383, 53);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(167, 25);
-            this.label17.TabIndex = 39;
-            this.label17.Text = "Fatura Fotoğraf:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(353, 104);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(278, 377);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 40;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(24, 104);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(82, 25);
-            this.label18.TabIndex = 41;
-            this.label18.Text = "Pc Adı:";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox14.Location = new System.Drawing.Point(182, 99);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(129, 30);
-            this.textBox14.TabIndex = 42;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(844, 273);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(249, 53);
-            this.simpleButton1.TabIndex = 43;
-            this.simpleButton1.Text = "GERİ DÖN";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(844, 369);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(249, 53);
-            this.simpleButton2.TabIndex = 44;
-            this.simpleButton2.Text = "GÜNCELLE";
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(547, 84);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(154, 23);
+            this.comboBox2.TabIndex = 16;
             // 
             // AnaEkran
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1136, 746);
+            this.ClientSize = new System.Drawing.Size(1043, 746);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ribbonControl1);
@@ -578,6 +753,9 @@ namespace EnvanterProgramıDeneme
             this.Text = "AnaEkran";
             this.Load += new System.EventHandler(this.AnaEkran_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -622,7 +800,6 @@ namespace EnvanterProgramıDeneme
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label15;
@@ -634,5 +811,22 @@ namespace EnvanterProgramıDeneme
         private System.Windows.Forms.Label label18;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label2;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
+        private DevExpress.XtraBars.BarEditItem barEditItem2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarEditItem ara;
+        private DevExpress.XtraEditors.Repository.RepositoryItemSearchControl repositoryItemSearchControl1;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Label label3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label4;
     }
 }

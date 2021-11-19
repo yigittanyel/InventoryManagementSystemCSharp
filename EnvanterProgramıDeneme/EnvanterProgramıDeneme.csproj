@@ -58,23 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AidiyetFatura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AidiyetFatura.Designer.cs">
-      <DependentUpon>AidiyetFatura.cs</DependentUpon>
-    </Compile>
     <Compile Include="AnaEkran.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AnaEkran.Designer.cs">
       <DependentUpon>AnaEkran.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BarkodOkuyucu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BarkodOkuyucu.Designer.cs">
-      <DependentUpon>BarkodOkuyucu.cs</DependentUpon>
     </Compile>
     <Compile Include="Bilgisayar.cs">
       <SubType>Form</SubType>
@@ -94,35 +82,11 @@
     <Compile Include="EklemeEkrani.Designer.cs">
       <DependentUpon>EklemeEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ekran.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ekran.Designer.cs">
-      <DependentUpon>Ekran.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ElTerminali.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ElTerminali.Designer.cs">
-      <DependentUpon>ElTerminali.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="GuncelleEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GuncelleEkrani.Designer.cs">
       <DependentUpon>GuncelleEkrani.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Klavye.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Klavye.Designer.cs">
-      <DependentUpon>Klavye.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -130,52 +94,10 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mouse.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mouse.Designer.cs">
-      <DependentUpon>Mouse.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Office.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Office.Designer.cs">
-      <DependentUpon>Office.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Projeksiyon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Projeksiyon.Designer.cs">
-      <DependentUpon>Projeksiyon.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VeriEkrani.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VeriEkrani.Designer.cs">
-      <DependentUpon>VeriEkrani.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Yazıcı.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Yazıcı.Designer.cs">
-      <DependentUpon>Yazıcı.cs</DependentUpon>
-    </Compile>
-    <Compile Include="İsletimSistemi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="İsletimSistemi.Designer.cs">
-      <DependentUpon>İsletimSistemi.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AidiyetFatura.resx">
-      <DependentUpon>AidiyetFatura.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AnaEkran.resx">
       <DependentUpon>AnaEkran.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BarkodOkuyucu.resx">
-      <DependentUpon>BarkodOkuyucu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bilgisayar.resx">
       <DependentUpon>Bilgisayar.cs</DependentUpon>
@@ -186,32 +108,11 @@
     <EmbeddedResource Include="EklemeEkrani.resx">
       <DependentUpon>EklemeEkrani.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ekran.resx">
-      <DependentUpon>Ekran.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ElTerminali.resx">
-      <DependentUpon>ElTerminali.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GuncelleEkrani.resx">
       <DependentUpon>GuncelleEkrani.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Klavye.resx">
-      <DependentUpon>Klavye.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mouse.resx">
-      <DependentUpon>Mouse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Office.resx">
-      <DependentUpon>Office.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Projeksiyon.resx">
-      <DependentUpon>Projeksiyon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -223,15 +124,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="VeriEkrani.resx">
-      <DependentUpon>VeriEkrani.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Yazıcı.resx">
-      <DependentUpon>Yazıcı.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="İsletimSistemi.resx">
-      <DependentUpon>İsletimSistemi.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

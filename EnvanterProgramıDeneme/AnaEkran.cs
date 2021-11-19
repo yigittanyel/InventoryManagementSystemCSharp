@@ -8,14 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using DevExpress.XtraEditors;
+
 
 namespace EnvanterProgramıDeneme
 {
-    public partial class AnaEkran : Form
+    public partial class AnaEkran : XtraForm
     {
         SqlConnection baglanti;
         SqlCommand komut;
         SqlDataAdapter da;
+        DataTable tablo;
         public AnaEkran()
         {
             InitializeComponent();
@@ -24,7 +27,7 @@ namespace EnvanterProgramıDeneme
         {
             baglanti = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=CihazEnvanter;Integrated Security=True");
             baglanti.Open();
-            da = new SqlDataAdapter(@"Select Ci.CihazId,Ci.CihazPcAdi,ca.CalisanIysKod as 'Çalışan Iys Kodu',Ca.CalisanBolum as 'Bölüm',Ca.CalisanAdSoyad as 'Çalışan Adı-Soyadı',Ca.CalisanUnvan as 'Unvan',Cm.CihazMarkaAdi,Ci.CihazModel,Ci.CihazSeriNo as 'Seri No',Cisl.CihazİslemciAdi as 'İşlemci',Cisl.CihazİslemciMarkasi as 'İşlemci Markası',ct.CihazTipiAdi as 'Cihaz Tipi',Ctur.CihazTuru as 'Cihaz Türü',Cr.CihazRamGb as 'Ram',cd.CihazDiskTuru as 'Disk Türü',Cd.CihazDiskGb as 'Disk GB',Ctur.CihazTuru as 'Cihaz Türü',Cekr.CihazEkranModel as 'Ekran Modeli',Cekr.CihazEkranBoyut as 'Ekran Boyutu',Ci.CihazAidiyet as 'Kiralık/Bizim',ISNULL(Ci.CihazAlinanFirma,'-') as 'Cihazın Alındığı Firma',Ci.CihazGarantiBaslangic as 'Garanti Başlangıç',Ci.CihazGarantiBitis as 'Garanti Bitiş',Ci.CihazFaturaTarih as 'Fatura Tarihi',Ci.CihazFaturaNo as 'Fatura No',Ci.CihazFaturaFoto as 'Fatura Fotoğraf'                        
+            da = new SqlDataAdapter(@"Select Ci.CihazId,Ci.CihazPcAdi,ca.CalisanIysKod as 'Çalışan_Iys_Kodu',Ca.CalisanBolum as 'Bölüm',Ca.CalisanAdSoyad as 'ÇalışanAdSoyad',Ca.CalisanUnvan as 'Unvan',Cm.CihazMarkaAdi,Ci.CihazModel,Ci.CihazSeriNo as 'Seri_No',Cisl.CihazİslemciAdi as 'İşlemci',Cisl.CihazİslemciMarkasi as 'İşlemci_Marka',ct.CihazTipiAdi as 'Cihaz_Tipi',Ctur.CihazTuru as 'Cihaz_Türü',Cr.CihazRamGb as 'Ram',cd.CihazDiskTuru as 'Disk_Türü',Cd.CihazDiskGb as 'Disk_GB',Cekr.CihazEkranModel as 'Ekran_Modeli',Cekr.CihazEkranBoyut as 'Ekran_Boyutu',Ci.CihazAidiyet as 'Kiralık/Bizim',ISNULL(Ci.CihazAlinanFirma,'-') as 'Cihazın Alındığı Firma',Ci.CihazGarantiBaslangic as 'Garanti Başlangıç',Ci.CihazGarantiBitis as 'Garanti Bitiş',Ci.CihazFaturaTarih as 'Fatura Tarihi',Ci.CihazFaturaNo as 'Fatura No',Ci.CihazFaturaFoto as 'Fatura Fotoğraf'                        
                 from Cihaz Ci
                 LEFT JOIN Calisanlar Ca on Ci.CalisanId=Ca.CalisanId
                 LEFT JOIN CihazDisk Cd on Ci.CihazDiskId=Cd.CihazDiskId
@@ -36,73 +39,92 @@ namespace EnvanterProgramıDeneme
                 LEFT JOIN CihazEkran Cekr on Cekr.CihazEkranId=Ci.CihazEkranId
                 LEFT JOIN CihazTur Ctur on Ctur.CihazTurId=Ci.CihazTurId
                 ", baglanti);
-            DataTable tablo = new DataTable();
+            tablo = new DataTable();
             da.Fill(tablo);
             dataGridView1.DataSource = tablo;
             baglanti.Close();
-
+            //dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Descending);
         }
-
-
         private void AnaEkran_Load(object sender, EventArgs e)
         {
-        }
+            EnvanterGoruntule();
+            comboBox1.Items.Add("Kiralık");
+            comboBox1.Items.Add("Bizim");
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            /*if (radioButton1.Checked == true)
-            {
-                AidiyetFaturaListele();
-            }*/
+            comboBox2.Items.Add("Cihaz Pc Adı");
+            comboBox2.Items.Add("Çalışan IYS Kodu");
+            comboBox2.Items.Add("Bölüm");
+            comboBox2.Items.Add("Ad Soyad");
+            comboBox2.Items.Add("Ünvan");
+            comboBox2.Items.Add("Marka Adı");
+            comboBox2.Items.Add("Model");
+            comboBox2.Items.Add("Seri No");
+            comboBox2.Items.Add("İşlemci");
+            comboBox2.Items.Add("İşlemci Markası");
+            comboBox2.Items.Add("Cihaz Tipi");
+            comboBox2.Items.Add("Cihaz Türü");
+            comboBox2.Items.Add("Ram");
+            comboBox2.Items.Add("Disk Türü");
+            comboBox2.Items.Add("Disk GB");
+            comboBox2.Items.Add("Ekran Modeli");
+            comboBox2.Items.Add("Ekran Boyutu");
+            comboBox2.Items.Add("Kiralık/Bizim");
+            comboBox2.Items.Add("Alınan Firma");
+
+          
+
 
         }
         private void BtnEkle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Hide();
             EklemeEkrani ee = new EklemeEkrani();
-            ee.Show();
-                
-            
-            
+            ee.Show();         
 
         }
 
         private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {   //LİSTELE
             EnvanterGoruntule();
+            panel1.Visible = false;
         }
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {   //EKLEYE BASTIĞIMIZDA EKLE EKRANINA YÖNLENDİRİR.
             EklemeEkrani ae = new EklemeEkrani();
-            this.Hide();
             ae.Show();
-        }
 
+        }
         private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {   //SİL
-            baglanti = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=CihazEnvanter;Integrated Security=True");
-            string sorgu = "DELETE from Cihaz where CihazId=@CihazId";
-            komut = new SqlCommand(sorgu, baglanti);
-            komut.Parameters.AddWithValue("@CihazId", dataGridView1.CurrentRow.Cells[0].Value);//onemli!!!
-            baglanti.Open();
-            komut.ExecuteNonQuery();
-            baglanti.Close();
-            MessageBox.Show("Kayıt başarıyla silindi.");
-            EnvanterGoruntule();
+            if (DialogResult.Yes == MessageBox.Show("Silmek istediğinizden emin misiniz ?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                baglanti = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=CihazEnvanter;Integrated Security=True");
+                string sorgu = "DELETE from Cihaz where CihazId=@CihazId";
+                komut = new SqlCommand(sorgu, baglanti);
+                komut.Parameters.AddWithValue("@CihazId", dataGridView1.CurrentRow.Cells[0].Value);//onemli!!!
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                MessageBox.Show("Kayıt başarıyla silindi.");
+                EnvanterGoruntule();
+            }
+            else
+            {
+                EnvanterGoruntule();
+            }       
         }
 
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {   //GÜNCELLE  --  datagrid editable
             panel1.Visible = true;
-            baglanti = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=CihazEnvanter;Integrated Security=True");
-            SqlCommand komut = new SqlCommand("UPDATE Cihaz set CihazPcAdi=@CihazPcAdi,CalisanId=@CalisanId,CihazDiskId=@CihazDiskId,CihazİslemciId=@CihazİslemciId,CihazMarkaId=@CihazMarkaId,CihazRamId=@CihazRamId,CihazTipId=@CihazTipId,CihazTurId=@CihazTurId,CihazSeriNo=@CihazSeriNo,CihazModel=@CihazModel,CihazEkranId=@CihazEkranId,CihazGarantiBaslangic=@CihazGarantiBaslangic,CihazGarantiBitis=@CihazGarantiBitis,CihazAidiyet=@CihazAidiyet,CihazAlinanFirma=@CihazAlinanFirma,CihazFaturaTarih=@CihazFaturaTarih,CihazFaturaNo=@CihazFaturaNo where CihazId=@CihazId", baglanti);
             textBox3.Text = dataGridView1.CurrentRow.Cells["CihazId"].Value.ToString();
             textBox9.Text = dataGridView1.CurrentRow.Cells["CihazModel"].Value.ToString();
-            textBox10.Text = dataGridView1.CurrentRow.Cells["Seri No"].Value.ToString();        
+            textBox10.Text = dataGridView1.CurrentRow.Cells["Seri_No"].Value.ToString();        
             dateTimePicker1.Text= dataGridView1.CurrentRow.Cells["Garanti Başlangıç"].Value.ToString();
             dateTimePicker2.Text= dataGridView1.CurrentRow.Cells["Garanti Bitiş"].Value.ToString();
-            textBox11.Text = dataGridView1.CurrentRow.Cells["Kiralık/Bizim"].Value.ToString();
+            comboBox1.Text = dataGridView1.CurrentRow.Cells["Kiralık/Bizim"].Value.ToString();
             textBox13.Text = dataGridView1.CurrentRow.Cells["Cihazın Alındığı Firma"].Value.ToString();
             dateTimePicker3.Text= dataGridView1.CurrentRow.Cells["Fatura Tarihi"].Value.ToString();
             textBox14.Text = dataGridView1.CurrentRow.Cells["CihazPcAdi"].Value.ToString();
@@ -140,45 +162,133 @@ namespace EnvanterProgramıDeneme
            // panel2.Visible = false;
 
         }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        { //RESİM SEÇ BUTONU
+            OpenFileDialog dosya = new OpenFileDialog();
+            dosya.Filter = "Resim Dosyası |*.jpg;*.nef;*.png |  Tüm Dosyalar |*.*";
+            dosya.ShowDialog();
+            string dosyayolu = dosya.FileName;
+            textBox1.Text = dosyayolu;
+            pictureBox1.ImageLocation = dosyayolu;
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        { //GÜNCELLE
+            if (DialogResult.Yes == MessageBox.Show("İlgili kayıtlar güncellenecektir.İşlemi onaylıyor musunuz ?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                baglanti = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=CihazEnvanter;Integrated Security=True");
+                SqlCommand komut = new SqlCommand("UPDATE Cihaz set CihazPcAdi=@CihazPcAdi,CihazSeriNo=@CihazSeriNo,CihazModel=@CihazModel,CihazFaturaFoto=@CihazFaturaFoto,CihazGarantiBaslangic=@CihazGarantiBaslangic,CihazGarantiBitis=@CihazGarantiBitis,CihazAidiyet=@CihazAidiyet,CihazAlinanFirma=@CihazAlinanFirma,CihazFaturaTarih=@CihazFaturaTarih,CihazFaturaNo=@CihazFaturaNo where CihazId=@CihazId", baglanti);
+                komut.Parameters.AddWithValue("@CihazId", textBox3.Text.ToString());
+                komut.Parameters.AddWithValue("@CihazPcAdi", textBox14.Text);
+                komut.Parameters.AddWithValue("@CihazAidiyet", comboBox1.Text);
+                komut.Parameters.AddWithValue("@CihazAlinanFirma", textBox13.Text);
+                komut.Parameters.AddWithValue("@CihazSeriNo", textBox10.Text.ToString());
+                komut.Parameters.AddWithValue("@CihazModel", textBox9.Text);
+                komut.Parameters.AddWithValue("@CihazFaturaFoto", textBox1.Text.ToString());
+                komut.Parameters.AddWithValue("@CihazGarantiBaslangic", dateTimePicker1.Value);
+                komut.Parameters.AddWithValue("@CihazGarantiBitis", dateTimePicker2.Value);
+                komut.Parameters.AddWithValue("@CihazFaturaTarih", dateTimePicker3.Value);
+                komut.Parameters.AddWithValue("@CihazFaturaNo", textBox2.Text.ToString());
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                MessageBox.Show("Güncelleme işlemi başarılı.");
+                this.Close();
+                AnaEkran ae = new AnaEkran();
+                ae.Show();
+                EnvanterGoruntule();
+            }
+            else
+            {
+                panel1.Visible = false;
+                EnvanterGoruntule();
+            }
+                
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "Kiralık")
+            {
+                textBox13.Visible = true;
+            }
+            else if (comboBox1.Text == "Bizim")
+            {
+                textBox13.Visible = false;
+            }
+        }
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if(comboBox2.Text=="Ad Soyad")
+            {
+                DataView dv = tablo.DefaultView;
+                dv.RowFilter = "ÇalışanAdSoyad Like '" + txtSearch.Text + "%'";
+                dataGridView1.DataSource = dv;
+            }
+            else if(comboBox2.Text== "Cihaz Pc Adı")
+            {
+                DataView dv = tablo.DefaultView;
+                dv.RowFilter = "CihazPcAdi Like '" + txtSearch.Text + "%'";
+                dataGridView1.DataSource = dv;
+            }
+            else if(comboBox2.Text== "Çalışan IYS Kodu")
+            {
+                DataView dv = tablo.DefaultView;
+                dv.RowFilter = "Çalışan_Iys_Kodu Like '" + txtSearch.Text + "%'";
+                dataGridView1.DataSource = dv;
+            }
+            else if (comboBox2.Text == "Bölüm")
+            {
+                DataView dv = tablo.DefaultView;
+                dv.RowFilter = "Bölüm Like '" + txtSearch.Text + "%'";
+                dataGridView1.DataSource = dv;
+            }
+            else if (comboBox2.Text == "Ünvan")
+            {
+                DataView dv = tablo.DefaultView;
+                dv.RowFilter = "Unvan Like '" + txtSearch.Text + "%'";
+                dataGridView1.DataSource = dv;
+            }
+            else if (comboBox2.Text == "Marka Adı")
+            {
+                DataView dv = tablo.DefaultView;
+                dv.RowFilter = "CihazMarkaAdi Like '" + txtSearch.Text + "%'";
+                dataGridView1.DataSource = dv;
+            }
+            else if (comboBox2.Text == "Model")
+            {
+                DataView dv = tablo.DefaultView;
+                dv.RowFilter = "CihazModel Like '" + txtSearch.Text + "%'";
+                dataGridView1.DataSource = dv;
+            }
+            else if (comboBox2.Text == "Seri No")
+            {
+                DataView dv = tablo.DefaultView;
+                dv.RowFilter = "Seri_No Like '" + txtSearch.Text + "%'";
+                dataGridView1.DataSource = dv;
+            }
+            else if (comboBox2.Text == "İşlemci")
+            {
+                DataView dv = tablo.DefaultView;
+                dv.RowFilter = "İşlemci Like '" + txtSearch.Text + "%'";
+                dataGridView1.DataSource = dv;
+            }
+            else if (comboBox2.Text == "İşlemci Markası")
+            {
+                DataView dv = tablo.DefaultView;
+                dv.RowFilter = "İşlemci_Marka Like '" + txtSearch.Text + "%'";
+                dataGridView1.DataSource = dv;
+            }
+            
+
+
+
+
+
+        }
     }
-}
-
-//
-//komut.Parameters.AddWithValue("@CihazPcAdi", dataGridView1.CurrentRow.Cells[1].Value.ToString());
-//SqlCommand komut2 = new SqlCommand("SELECT CalisanIysKod from Calisanlar", baglanti);
-//komut2.Parameters.AddWithValue("@CalisanIysKod", dataGridView1.CurrentRow.Cells[2].Value);
-//SqlCommand komut3 = new SqlCommand("SELECT CalisanBolum from Calisanlar", baglanti);
-//komut3.Parameters.AddWithValue("@CalisanBolum", dataGridView1.CurrentRow.Cells[3].Value.ToString());
-//SqlCommand komut4 = new SqlCommand("SELECT CalisanAdSoyad from Calisanlar", baglanti);
-//komut4.Parameters.AddWithValue("@CalisanAdSoyad", dataGridView1.CurrentRow.Cells[4].Value.ToString());
-//SqlCommand komut5 = new SqlCommand("SELECT CalisanUnvan from Calisanlar", baglanti);
-//komut5.Parameters.AddWithValue("@CalisanUnvan", dataGridView1.CurrentRow.Cells[5].Value.ToString());
-//baglanti.Open();
-//komut.ExecuteNonQuery();
-//baglanti.Close();
-//MessageBox.Show("Güncelleme işlemi başarılı.");
-
-//komut.Parameters.AddWithValue("@CalisanId", textEdit3.Text);
-//komut.Parameters.AddWithValue("@CihazDiskId", textEdit4.Text);
-//komut.Parameters.AddWithValue("@CihazİslemciId", textEdit5.Text);
-//komut.Parameters.AddWithValue("@CihazMarkaId", textEdit6.Text);
-//komut.Parameters.AddWithValue("@CihazRamId", textEdit7.Text);
-//komut.Parameters.AddWithValue("@CihazTipId", textEdit8.Text);
-//komut.Parameters.AddWithValue("@CihazTurId", textEdit9.Text);
-//komut.Parameters.AddWithValue("@CihazSeriNo", textEdit18.Text);
-//komut.Parameters.AddWithValue("@CihazModel", textEdit17.Text);
-//komut.Parameters.AddWithValue("@CihazEkranId", textEdit16.Text);
-//komut.Parameters.AddWithValue("@CihazGarantiBaslangic", dateTimePicker1.Value);
-//komut.Parameters.AddWithValue("@CihazGarantiBitis", dateTimePicker2.Value);
-//komut.Parameters.AddWithValue("@CihazAidiyet", comboBox1.Text);
-//komut.Parameters.AddWithValue("@CihazAlinanFirma", textEdit12.Text);
-//komut.Parameters.AddWithValue("@CihazFaturaTarih", dateTimePicker3.Value);
-//komut.Parameters.AddWithValue("@CihazFaturaNo", textEdit10.Text);
-//baglanti.Open();
-//komut.ExecuteNonQuery();
-//baglanti.Close();
-//MessageBox.Show("Kayıt başarıyla güncellendi.");
-//EnvanterGoruntule();
+ }
 
 
 
